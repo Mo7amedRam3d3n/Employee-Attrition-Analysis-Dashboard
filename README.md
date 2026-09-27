@@ -1,9 +1,10 @@
 # HR Attrition & Workforce Analytics Dashboard
 
 An interactive **Power BI** dashboard analyzing employee attrition data for **1,470 employees**, built to uncover *why* employees leave and *which employee segments* are most at risk — not just how many left overall.
+
 ---
 
-## ?? Overview
+## 📌 Overview
 
 The company has an overall attrition rate of **16%** (237 out of 1,470 employees left). On the surface this looks moderate — but breaking it down by category reveals specific groups with attrition rates 2–3x higher than the company average.
 
@@ -14,7 +15,7 @@ This dashboard was built as a single, information-dense page combining KPI cards
 
 ---
 
-## ??? Dataset
+## 🗂️ Dataset
 
 The dataset resembles the well-known IBM HR Attrition dataset structure, with the following fields:
 
@@ -32,7 +33,7 @@ The dataset resembles the well-known IBM HR Attrition dataset structure, with th
 
 ---
 
-## ?? Data Preparation (Power Query)
+## 🧹 Data Preparation (Power Query)
 
 - Verified and corrected data types (numeric vs. text columns)
 - Checked for duplicate `emp_no` values
@@ -43,7 +44,7 @@ The dataset resembles the well-known IBM HR Attrition dataset structure, with th
 
 ---
 
-## ?? Key DAX Measures
+## 📐 Key DAX Measures
 
 \`\`\`DAX
 Total Employees = COUNTROWS('HR Data')
@@ -66,7 +67,7 @@ Avg Job Satisfaction = AVERAGE('HR Data'[job_satisfaction])
 
 ---
 
-## ?? Dashboard Layout
+## 📊 Dashboard Layout
 
 A single-page, dark-themed dashboard with:
 
@@ -83,7 +84,7 @@ A single-page, dark-themed dashboard with:
 
 ---
 
-## ?? Key Insights
+## 💡 Key Insights
 
 1. **Travel frequency is a top attrition driver** — employees who travel frequently leave at **25%**, vs. only **8%** for those who don't travel at all (3x difference).
 2. **Marital status matters** — single employees leave at **26%**, compared to **12%** for married employees.
@@ -94,6 +95,6 @@ A single-page, dark-themed dashboard with:
 
 ---
 
-## ??? Tools Used
+## 🛠️ Tools Used
 
 - **Power BI Desktop** (Power Query,Power Bi ,DAX, visuals)
